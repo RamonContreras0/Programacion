@@ -4,4 +4,5 @@ def factorial(num):
         num = num * factorial(num -1)
     print("Valor final ->",num)
     return num
-gh
+
+print(factorial(5))
