@@ -52,3 +52,15 @@ print(animales)
 #Agregando un nuevo elemento al set
 colores.add("Celeste")
 print(colores)
+#7. Diccionarios (Conjuntos)
+
+paciente = dict(
+    nombre = "Francisco",
+    edad = "30")
+
+doctor = {
+    "Nombre" : "Elson",
+    "Edad" : "40",
+    "Especialidad" : "Cirujano"}
+
+print(paciente, doctor)
