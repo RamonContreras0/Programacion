@@ -58,9 +58,31 @@ paciente = dict(
     nombre = "Francisco",
     edad = "30")
 
+hospital = {"Nombre" : "Augusto Riffart"}
+
 doctor = {
     "Nombre" : "Elson",
     "Edad" : "40",
     "Especialidad" : "Cirujano"}
 
 print(paciente, doctor)
+
+#Eliminando la clave "Nombre" del diccionario Doctor
+doctor.pop("Nombre")
+print("Diccionario Actualizado", doctor)
+
+#Consultar Valores y Claves
+print(paciente.keys())
+print(paciente.values())
+
+#Consultar Valores Especificos
+print(paciente["nombre"])
+
+#Actualizando Diccionarios
+paciente.update({
+        "cuidad": "Queilen"
+})
+print(paciente)
+# Dejar vacio el Diccionario 
+paciente.clear()
+print(paciente)
