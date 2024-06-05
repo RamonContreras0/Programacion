@@ -89,3 +89,17 @@ print(paciente)
 # Dejar vacio el Diccionario 
 paciente.clear()
 print(paciente)
+
+#map()
+n= [1,2,3,4,5]
+n_str = list(map(str, n))
+print("Lista de numeros como string:", ', '.join(n_str))
+#Filter()
+ramos = ["Programacion", "Taller", "Matematicas", "Fisica", "INgles"]
+long = list(filter(lambda x: len(x) > 7, ramos))
+print(long)
+#zip()
+a = [1,2,3,4]
+b = ["A", "B", "C", "D"]
+comprimir = list(zip(a,b))
+print(comprimir)
