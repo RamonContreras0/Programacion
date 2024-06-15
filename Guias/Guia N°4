@@ -1,0 +1,20 @@
+ICA = [134, 99, 245, 50]
+Ciudades = ["Santiago", "Temuco", "Osorno", "Punta Arenas"]
+airemin=min(ICA)
+airemax=max(ICA)
+
+print("La cuidad con el indice de calidad de aire mas bajo es ", airemin)
+print("La cuidad con el indice de calidad de aire mas alto es ", airemax)
+
+ICA = [134, 99, 245, 50]
+if ICA > 0 and ICA <= 50:
+    print("La calidad del aire es buena")
+elif ICA > 50 and ICA <= 100:
+    print("La calidad del aire es moderada")
+elif ICA > 100 and ICA <= 150:
+    print("La calidad del aire es dañina a la salud de grupos sensibles")
+elif ICA > 150 and ICA <= 200:
+    print("La calidad del aire es dañina para la salud")
+elif ICA > 200 and ICA <= 300:
+    print("La calidad del aire es muy dañina a la salud")
+else: print("La calidad del aire es Peligrosa")
