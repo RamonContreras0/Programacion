@@ -1,20 +1,19 @@
-ICA = [134, 99, 245, 50]
-Ciudades = ["Santiago", "Temuco", "Osorno", "Punta Arenas"]
-airemin=min(ICA)
-airemax=max(ICA)
+''' Obtener la cantidad de veces que se repite la palabra “universidad” dentro del siguiente
+parrafo: 
+“La Universidad de los Lagos es una institucion estatal fundada en 1993. Esta universidad regional 
+entrega una contribucion significativa al desarrollo sostenible del territorio. Como Universidad sus 
+pilares fundamentales se basan en la inclusion, pluralismo, conciencia ambiental y participación
+democratica.” 
+Guardar las palabras encontradas dentro de una tupla.'''
 
-print("La cuidad con el indice de calidad de aire mas bajo es ", airemin)
-print("La cuidad con el indice de calidad de aire mas alto es ", airemax)
+parrafo= """La Universidad de los Lagos es una institucion estatal fundada en 1993. Esta universidad regional 
+entrega una contribucion significativa al desarrollo sostenible del territorio. Como Universidad sus 
+pilares fundamentales se basan en la inclusion, pluralismo, conciencia ambiental y participación
+democratica."""
 
-ICA = [134, 99, 245, 50]
-if ICA > 0 and ICA <= 50:
-    print("La calidad del aire es buena")
-elif ICA > 50 and ICA <= 100:
-    print("La calidad del aire es moderada")
-elif ICA > 100 and ICA <= 150:
-    print("La calidad del aire es dañina a la salud de grupos sensibles")
-elif ICA > 150 and ICA <= 200:
-    print("La calidad del aire es dañina para la salud")
-elif ICA > 200 and ICA <= 300:
-    print("La calidad del aire es muy dañina a la salud")
-else: print("La calidad del aire es Peligrosa")
+Universidad=parrafo.count("Universidad") + parrafo.count("universidad")
+print(Universidad)
+
+palabras= tuple(parrafo.split())
+print(palabras)
+print ("La palabra Universidad aparece", Universidad, "veces ")
