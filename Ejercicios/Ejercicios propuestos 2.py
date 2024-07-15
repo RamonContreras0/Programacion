@@ -1,20 +1,16 @@
-# PRODUCTO 1
+
 descrip_prod1 = input("Ingrese la descripción del producto 1: ")
 precio_1 = int(input("Ingrese el precio en pesos chilenos del producto 1: "))
 cantidad_1 = int(input("Ingrese la cantidad disponible del producto 1: "))
 
-# Verificar que la descripción del producto 1 tenga al menos 40 caracteres
 longitud1 = len(descrip_prod1) < 40
 
-# PRODUCTO 2
 descrip_prod2 = input("\nIngrese la descripción del producto 2: ")
 precio_2 = int(input("Ingrese el precio en pesos chilenos del producto 2: "))
 cantidad_2 = int(input("Ingrese la cantidad disponible del producto 2: "))
 
-# Verificar que la descripción2 tenga al menos 40 caracteres
 longitud2 = len(descrip_prod2) < 40
 
-# Transformar a mayúsculas
 descrip1_may = descrip_prod1.upper()
 descrip2_may = descrip_prod2.upper()
 
@@ -22,7 +18,6 @@ descrip2_may = descrip_prod2.upper()
 newdescrip1 = ' '.join(descrip1_may.split())
 newdescrip2 = ' '.join(descrip2_may.split())
 
-# Valor total del inventario
 v1 = precio_1 * cantidad_1
 v2 = precio_2 * cantidad_2
 
