@@ -1,53 +1,42 @@
+ID_14 = {
+    "Región": "Los Ríos",
+    "Superficie (Km2)": 18429,
+    "Habitantes": 404432
+}
 
-ID_14=dict[
-    "Región: " "Los Rios",
-    "Superficie(Km2): " "18.429",
-    "Habitantes: " "404.432"
-]
-ID_12=dict [
-    "Región: " " Magallanes",
-     "Superficie(Km2): " "1.382.291 ",
-     "Habitantes: " "166.533"]     
+ID_12 = {
+    "Región": "Magallanes",
+    "Superficie (Km2)": 1382291,
+    "Habitantes": 166533
+}
 
-censo_2017=dict[
-    ID_14,
-    ID_12   
-]
+censo_2017 = {
+    "ID_14": ID_14,
+    "ID_12": ID_12
+}
+
 print(censo_2017)
 
-densidad1= 18429/404432
-densidad1= round(1)
-densidad2= 1382291/166533
-densidad2= round(1)
-"Capital: " "Valdivia"
-"Capital: " "Punta Arenas"
-"Comunas: " "Río Bueno, La Unión, Paillaco"
-"Comunas: " "Cabo de Hornos, Puerto Williams, Porvenir"
-"Provincias: " "Ranco, Valdivia"
-"Provincias: " "Antártica Chilena, Magallanes, Tierra del Fuego, Última Esperanza"
-#ID_12.__add__("Densidad: ", densidad1)
-#ID_14.__add__("Densidad: ", densidad2)
-ID_14=dict[
-    "Región: " "Los Rios",
-    "Superficie(Km2): " "18.429",
-    "Habitantes: " "404.432",
-    "Capital: " "Valdivia",
-    "Comunas: " "Río Bueno, La Unión, Paillaco",
-    "Provincias: " "Ranco, Valdivia"
-    "Densidad: ", densidad1,]
-ID_12=dict [
-    "Región: " " Magallanes",
-     "Superficie(Km2): " "1.382.291 ",
-     "Habitantes: " "166.533",
-     "Capital: " "Punta Arenas",
-     "Comunas: " "Cabo de Hornos, Puerto Williams, Porvenir",
-     "Provincias: " "Antártica Chilena, Magallanes, Tierra del Fuego, Última Esperanza"
-     "Densidad: ", densidad2]  
-#ID_12.update=("Magallanes y Antártica Chilena")
-censo_2017=dict[
-    ID_14,
-    ID_12   
-]
+densidad1 = ID_14["Superficie (Km2)"] / ID_14["Habitantes"]
+densidad1 = round(densidad1, 1)  
+densidad2 = ID_12["Superficie (Km2)"] / ID_12["Habitantes"]
+densidad2 = round(densidad2, 1)  
+
+ID_14.update({"Densidad": densidad1})
+ID_12.update({"Densidad": densidad2})
+
+ID_14.update({"Capital": "Valdivia"})
+ID_12.update({"Capital": "Punta Arenas"})
+
+ID_14.update({"Comunas": "Río Bueno, La Unión, Paillaco"})
+ID_12.update({"Comunas": "Cabo de Hornos, Puerto Williams, Porvenir"})
+
+ID_14.update({"Provincias": "Ranco, Valdivia "})
+ID_12.update({"Provincias": "Antártica Chilena, Magallanes, Tierra del Fuego, Última Esperanza"})
+
+ID_12.update({"Región": "Magallanes y Antártica Chilena"})
+
 print(censo_2017)
 
-list(censo_2017)
+lista = list(censo_2017.items())
+print(lista)
