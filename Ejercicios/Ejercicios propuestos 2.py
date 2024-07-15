@@ -14,7 +14,7 @@ longitud2 = len(descrip_prod2) < 40
 descrip1_may = descrip_prod1.upper()
 descrip2_may = descrip_prod2.upper()
 
-# Unir con Espacios
+
 newdescrip1 = ' '.join(descrip1_may.split())
 newdescrip2 = ' '.join(descrip2_may.split())
 
